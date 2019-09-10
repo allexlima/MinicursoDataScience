@@ -1,0 +1,10 @@
+pandas
+matplotlib
+numpy
+random
+git+https://github.com/fernandokm/chrome-trex-rush@master
+sklearn
+seaborn
+mlextend
+scipy
+
