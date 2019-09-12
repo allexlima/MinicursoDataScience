@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Titanic Predic</title>
+        <meta name="description" content="Titanic">
+        <meta name="author" content="Allex">
+    </head>
+
+    <body>
+        <form action="/api" method="POST">
+            <fieldset>
+                <legend>Dados do passageiro</legend>
+
+
+                Classe: 
+                    <select name='Pclass'>
+                        <option value="1">Primeira</option>
+                        <option value="2">Segunda</option>
+                        <option value="3">Terceira</option>
+                    </select><br><br>
+
+                Gênero:
+                    <select name='Sex'>
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                    </select><br><br>
+
+                Cidade de embarque:
+                    <select name='Embarked'>
+                        <option value="C">Cherbourg</option>
+                        <option value="S">Southampton</option>
+                        <option value="Q">Queenstown</option>
+                    </select><br><br>
+                
+                Idade: <input type="number" name="Age" min="0"/><br><br>
+                Qtd. irmãos ou cônjuges: <input type="number" name="SibSp" min="0"/><br><br>
+                Qtd. país ou filhos: <input type="number" name="Parch" min="0"/><br><br>
+
+                <input type="submit" value="Obter predição">
+            </fieldset>
+        </form>
+    </body>
+</html>
